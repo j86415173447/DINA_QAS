@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F50E29D3-3689-4917-8FC4-3C1067ED6086}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dina_QAS</RootNamespace>
+    <AssemblyName>Dina_QAS</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2019.3.1022.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2019.3.1022.40\Telerik.WinControls.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.GridView, Version=2019.3.1022.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.RadDiagram, Version=2019.3.1022.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2019.3.1022.40\Telerik.WinControls.RadDiagram.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Aqua, Version=2019.3.1022.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2019.3.1022.40\Telerik.WinControls.Themes.Aqua.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Fluent, Version=2019.3.1022.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2019.3.1022.40\Telerik.WinControls.Themes.Fluent.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Material, Version=2019.3.1022.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2019.3.1022.40\Telerik.WinControls.Themes.Material.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2013Light, Version=2019.3.1022.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2019.3.1022.40\Telerik.WinControls.Themes.Office2013Light.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetroBlue, Version=2019.3.1022.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2019.3.1022.40\Telerik.WinControls.Themes.TelerikMetroBlue.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Windows8, Version=2019.3.1022.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2019.3.1022.40\Telerik.WinControls.Themes.Windows8.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2019.3.1022.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2019.3.1022.40\Telerik.WinControls.UI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TelerikCommon, Version=2019.3.1022.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2019.3.1022.40\TelerikCommon.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="01_Personel\New_Doc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01_Personel\New_Doc.Designer.cs">
+      <DependentUpon>New_Doc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SYSTEM\Intro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SYSTEM\Intro.Designer.cs">
+      <DependentUpon>Intro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SYSTEM\Main_Panel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SYSTEM\Main_Panel.Designer.cs">
+      <DependentUpon>Main_Panel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SYSTEM\Pass_Change.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SYSTEM\Pass_Change.Designer.cs">
+      <DependentUpon>Pass_Change.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="01_Personel\New_Doc.resx">
+      <DependentUpon>New_Doc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SYSTEM\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="SYSTEM\Intro.resx">
+      <DependentUpon>Intro.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="SYSTEM\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SYSTEM\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SYSTEM\Main_Panel.resx">
+      <DependentUpon>Main_Panel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SYSTEM\Pass_Change.resx">
+      <DependentUpon>Pass_Change.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.manifest" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <!--sirinie -->
+    <None Include="Resources\Pre_Intro_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tick_blue_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross_blue_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tick_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\power_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Personel_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Personel_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_doc_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doc_amend_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove_doc_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_doc_241.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chart_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chart_35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chart_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start_menu_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start_menu_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\org_chart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Org_chart2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Doc_Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doc_amend.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doc_amend2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doc_amend3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doc_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doc_add_final.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doc_amend_final.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doc_del_final.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doc_del_final1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\per_doc_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\per_doc_am.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\per_doc_del.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reports_final.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reporting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SMS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gmail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SMS2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\main_background3.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Icon.ico" />
+    <None Include="Resources\Close_17.png" />
+    <None Include="Resources\tick_save_24.png" />
+    <None Include="Resources\shutdown_24.png" />
+    <None Include="Resources\add_file_25.png" />
+    <None Include="Resources\add_file_35.png" />
+    <None Include="Resources\org_chart_2_24.png" />
+    <None Include="Resources\docs_24.png" />
+    <None Include="Resources\org_chart_24.png" />
+    <None Include="Resources\checklist_24.png" />
+    <None Include="Resources\profile_24.png" />
+    <None Include="Resources\Excel_40.png" />
+    <None Include="Resources\Rar_40.png" />
+    <None Include="Resources\Zip_40.png" />
+    <None Include="Resources\word_40.png" />
+    <None Include="Resources\PDF_40.png" />
+    <None Include="Resources\JPG_40.png" />
+    <None Include="Resources\PNG_40.png" />
+    <None Include="Resources\browse_35.png" />
+    <None Include="Resources\add_to_list_35.png" />
+    <None Include="Resources\add_to_list_24.png" />
+    <None Include="Resources\picture_background2.png" />
+    <None Include="Resources\picture_background1.png" />
+    <None Include="Resources\picture_background.png" />
+    <None Include="Resources\decompress2.png" />
+    <None Include="Resources\decompress.png" />
+    <None Include="Resources\compress.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties ShouldAddDPIScalingManifest="True" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
